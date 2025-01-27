@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+</head>
+<body>
+  <div class="container">
+    <section class="todos">
+      <h2 class="title">To-Do List</h2>
+      <!-- Greeting -->
+      <div class="create-todo">
+        <form id="new-todo-form">
+          <input type="text" name="content" id="content" placeholder="What's on your todo?"/>
+          <div class="options">
+            <label for="category1">
+              <input type="radio" name="category" id="category1" value="business"/>
+              <span class="bubble business"></span><span>Business</span>
+            </label>  
+            <label for="category2">  
+              <input type="radio" name="category" id="category2" value="personal"/>
+              <span class="bubble personal"></span><span>Personal</span>
+            </label>
+          </div>
+          <input type="submit" value="Add todo" />
+        </form>
+      </div>
+      <!-- Main Todo List -->
+      <main class="main">
+        <h3>My Lists</h3>
+        <div class="todo-list">
+          <div class="list" id="todo-list"></div>
+        </div>
+      </main>
+      <!-- Count Item -->
+      <hr class="counter"/>
+      <div class="counter-container">
+        <p>Total<span id="countList"> 0</span> items</p>
+        <button type="button" class="btnClear">Clear List</button>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
