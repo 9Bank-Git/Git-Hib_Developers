@@ -89,6 +89,7 @@ function DisplayList() {
       localStorage.setItem("TodoContent", JSON.stringify(TodoContent));
       DisplayList();
     });
+
     // <-- Edit Input -->
     edit.addEventListener("click", (e) => {
       e.preventDefault();
