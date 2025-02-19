@@ -64,6 +64,7 @@ section {
 	color: var(--dark);
 	font-size: 2.2rem;
 	font-weight: 500;
+	gap: 10px;
 	margin-top: 2rem;
 	margin-bottom: 1.5rem;
 }
