@@ -190,7 +190,7 @@ main {
 }
 
 .todo-list .list {
-	display: grid;
+	display: block;
 	row-gap: 10px;
 	flex-direction: column;
 	overflow-y: scroll ;
